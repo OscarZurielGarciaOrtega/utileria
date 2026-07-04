@@ -1,0 +1,136 @@
+/* =========================================
+   RESET BÁSICO
+========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Un fondo gris muy claro para que resalten las tarjetas blancas */
+    background-color: #f0f2f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    color: #333;
+}
+
+/* =========================================
+   CONTENEDORES PRINCIPALES (TARJETAS)
+========================================= */
+.login-container, 
+.registro-container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Para que no se estire de más en monitores grandes */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+    font-size: 24px;
+}
+
+/* =========================================
+   FORMULARIOS E INPUTS
+========================================= */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+/* Efecto cuando das clic para escribir */
+input:focus {
+    border-color: #0066ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.2);
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0052cc;
+}
+
+button:active {
+    transform: scale(0.98); /* Pequeño efecto de hundimiento al dar clic */
+}
+
+/* =========================================
+   MODAL NATIVO (<dialog>)
+========================================= */
+dialog {
+    margin: auto; /* Centra el modal automáticamente */
+    padding: 30px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* El fondo oscuro que se pone detrás del modal */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px); /* Hace borroso lo de atrás */
+}
+
+dialog h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+dialog p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+#cerrarModal {
+    background-color: #e74c3c;
+    width: auto;
+    padding: 10px 25px;
+}
+
+#cerrarModal:hover {
+    background-color: #c0392b;
+}
