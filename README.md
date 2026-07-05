@@ -2,7 +2,7 @@
 
 | Datos del Alumno | Información del Proyecto |
 | :--- | :--- |
-| **Autor:** Oscar Zuriel García Ortega | **Materia:** Programación Web |
+| **Autor:** Garcia Ortega Oscar Zuriel | **Materia:** Programación Web |
 | **Modalidad:** Individual | **Librería:** Vanilla JavaScript (No Frameworks) |
 
 ---
