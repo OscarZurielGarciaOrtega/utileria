@@ -59,9 +59,10 @@ const idSesion = generarIdUnico();
 
 *(Resultados de ejecución y validación de la Sección Libre en Consola)*
 
-(ARRASTRA_TU_IMAGEN_AQUI)
+<img width="1860" height="887" alt="Captura de pantalla 2026-07-04 174655" src="https://github.com/user-attachments/assets/ccb54dc1-21f5-4278-a3f2-d9dabe13f1ec" />
+
 
 ---
 
-## 🎥 Demo Promocional (Pitch de 60 segundos)
+##  Demo Promocional (Pitch de 60 segundos)
 [Haz clic aquí para ver el video demostrativo de Utilería.js en acción](PON_AQUI_EL_LINK_DE_TU_VIDEO)
