@@ -65,8 +65,9 @@ const idSesion = generarIdUnico();
 
 <img width="717" height="767" alt="Captura de pantalla 2026-07-04 182939" src="https://github.com/user-attachments/assets/402fc2bd-301d-47a3-8247-6de318b1bca5" />
 
+<img width="1855" height="887" alt="Captura de pantalla 2026-07-04 183928" src="https://github.com/user-attachments/assets/ac964278-38cd-4a50-826b-286e23b182cb" />
 
-<img width="1860" height="887" alt="Captura de pantalla 2026-07-04 174655" src="https://github.com/user-attachments/assets/ccb54dc1-21f5-4278-a3f2-d9dabe13f1ec" />
+<img width="1855" height="885" alt="Captura de pantalla 2026-07-04 184259" src="https://github.com/user-attachments/assets/c6e59985-8978-46c0-8747-5be3fba8ed10" />
 
 
 ---
