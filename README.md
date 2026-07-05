@@ -1,16 +1,22 @@
 #  Utilería.js - Librería de Validaciones
 
-**Autor:** Oscar Zuriel García Ortega  
-**Modalidad:** Individual
+| Datos del Alumno | Información del Proyecto |
+| :--- | :--- |
+| **Autor:** Oscar Zuriel García Ortega | **Materia:** Programación Web |
+| **Modalidad:** Individual | **Librería:** Vanilla JavaScript (No Frameworks) |
+
+---
 
 ##  ¿Qué problema resuelve?
-Esta librería proporciona una serie de herramientas de validación de datos comunes (correos, contraseñas, edades) y formateo de texto en el lado del cliente (Frontend) utilizando Vanilla JavaScript puro. Su objetivo es evitar la dependencia de frameworks externos y componentes visuales prefabricados, permitiendo a los desarrolladores mantener la lógica completamente separada de la vista (HTML) y mejorando el rendimiento de los formularios web.
+Esta librería proporciona una serie de herramientas de validación de datos comunes (correos, contraseñas, longitudes, formatos de texto y fechas) y formateo en el lado del cliente (Frontend) utilizando Vanilla JavaScript puro. 
+
+Su objetivo principal es evitar la dependencia de frameworks externos pesados y componentes visuales prefabricados. Esto permite a los desarrolladores mantener la lógica de negocio completamente separada de la vista (HTML), optimizando el rendimiento de los formularios web y asegurando la integridad de los datos antes de ser enviados al servidor o procesados por una base de datos.
 
 ---
 
 ##  Instalación
 
-Para utilizar esta librería en tu proyecto, simplemente incluye el archivo `utileria.js` dentro de tu documento HTML. Se recomienda usar el atributo `defer` en el `<head>` o colocar el script justo antes de cerrar la etiqueta `</body>`:
+Para utilizar esta librería en tu proyecto, simplemente incluye el archivo `utileria.js` dentro de tu documento HTML. Se recomienda usar el atributo `defer` dentro de la etiqueta `<head>` o colocar el script justo antes de cerrar la etiqueta `</body>`:
 
 ```html
 <script src="js/utileria.js" defer></script>
@@ -18,39 +24,63 @@ Para utilizar esta librería en tu proyecto, simplemente incluye el archivo `uti
 
 ---
 
-## 🛠️ Uso y Ejemplos de Código
+##  Uso y Ejemplos de Código Embebido
 
-Aquí tienes ejemplos de cómo implementar las funciones principales en tu lógica de interfaz (controlador):
+A continuación se detalla el uso real de las 6 funciones obligatorias y las 2 funciones adicionales de la sección libre:
 
-### 1. Validar formato de Correo y Contraseña
+### 1. Validaciones del Módulo de Login
 ```javascript
-const correo = "usuario@ejemplo.com";
-const pass = "SuperClave123.";
+// Validación de Correo Electrónico
+const correoInput = "correo@ejemplo.com";
+if (validarCorreo(correoInput)) {
+    console.log("El formato del correo es correcto.");
+}
 
-if(validarCorreo(correo) && validarPassword(pass)){
-    console.log("Credenciales con formato válido.");
+// Validación de Contraseña Estricta (Mayúscula, minúscula, número, carácter especial y min. 8 caracteres)
+const passwordInput = "Koplesito32.";
+if (validarPassword(passwordInput)) {
+    console.log("Contraseña segura y válida.");
 }
 ```
 
-### 2. Calcular Edad a partir de Fecha de Nacimiento
+### 2. Validaciones del Módulo de Registro
 ```javascript
-const fechaNacimiento = "2004-05-25";
-const edad = calcularEdad(fechaNacimiento); // Retorna entero (ej. 22)
+// Validación de texto (Solo letras y espacios, acepta acentos)
+const nombreInput = "Oscar Zuriel";
+if (soloLetras(nombreInput)) {
+    console.log("Nombre válido.");
+}
 
-if(esMayorDeEdad(fechaNacimiento)){
-    console.log(`Tienes ${edad} años. Acceso permitido al sistema.`);
+// Validación de longitud máxima para campos numéricos
+const telefonoInput = "9512756492";
+if (validarLongitud(telefonoInput, 10)) {
+    console.log("La longitud del número es correcta.");
 }
 ```
 
-### 3. Sección Libre (Funciones Adicionales)
-Se integraron dos funciones extra orientadas a la validación de datos para registro y bases de datos:
-* **`validarTelefono(telefono)`**: Asegura mediante Expresiones Regulares que un input contenga exactamente 10 dígitos numéricos.
-* **`generarIdUnico()`**: Genera un token alfanumérico aleatorio, útil para simular identificadores de sesión o llaves primarias en una base de datos.
+### 3. Cálculo y Control de Edades
+```javascript
+const fechaNac = "2004-05-25";
+
+// Obtener la edad exacta como número entero
+const edadCalculada = calcularEdad(fechaNac); // Retorna: 22
+
+// Verificar si cumple con la mayoría de edad (>= 18)
+if (esMayorDeEdad(fechaNac)) {
+    console.log(`Acceso permitido. Edad: ${edadCalculada} años.`);
+}
+```
+
+### 4. Sección Libre (Funciones Adicionales de la Interfaz)
+* **`validarTelefono(telefono)`**: Verifica mediante expresiones regulares dedicadas que la cadena contenga exactamente 10 dígitos numéricos correspondientes a una línea telefónica válida.
+* **`generarIdUnico()`**: Crea un token alfanumérico aleatorio ideal para simular identificadores únicos de sesión (UID) o llaves temporales de transacciones.
 
 ```javascript
-// Ejemplo de uso de la sección libre
-const telValido = validarTelefono("9512756492"); 
-const idSesion = generarIdUnico(); 
+// Validación rápida de teléfono
+const esTelValido = validarTelefono("9512756492"); // Retorna: true
+
+// Generación de identificador único alfanumérico
+const idSesion = generarIdUnico(); // Ejemplo: "23lo8mwz"
 ```
 
 ---
