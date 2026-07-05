@@ -103,4 +103,4 @@ const idSesion = generarIdUnico(); // Ejemplo: "23lo8mwz"
 ---
 
 ##  Demo Promocional
-[[Haz clic aquí para ver el video demostrativo de Utilería.js en acción](https://drive.google.com/file/d/1Xdc3FGTf774LBPxXbHXcOOMP8odg-dv7/view) 
+[[Haz clic aquí para ver el video demostrativo de Utilería.js en acción]](https://drive.google.com/file/d/1Xdc3FGTf774LBPxXbHXcOOMP8odg-dv7/view) 
