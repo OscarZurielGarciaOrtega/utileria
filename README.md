@@ -59,6 +59,13 @@ const idSesion = generarIdUnico();
 
 *(Resultados de ejecución y validación de la Sección Libre en Consola)*
 
+<img width="1860" height="891" alt="Captura de pantalla 2026-07-04 182826" src="https://github.com/user-attachments/assets/94e1a0c2-4d6a-4461-a739-b9a3144b4a3e" />
+
+<img width="1856" height="882" alt="Captura de pantalla 2026-07-04 182810" src="https://github.com/user-attachments/assets/5730041f-76f6-4f48-a3b2-a16a2c996cb0" />
+
+<img width="717" height="767" alt="Captura de pantalla 2026-07-04 182939" src="https://github.com/user-attachments/assets/402fc2bd-301d-47a3-8247-6de318b1bca5" />
+
+
 <img width="1860" height="887" alt="Captura de pantalla 2026-07-04 174655" src="https://github.com/user-attachments/assets/ccb54dc1-21f5-4278-a3f2-d9dabe13f1ec" />
 
 
